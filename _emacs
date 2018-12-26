@@ -36,14 +36,17 @@ There are two things you can do about this warning:
  '(custom-safe-themes
    (quote
     ("e068203104e27ac7eeff924521112bfcd953a655269a8da660ebc150c97d0db8" default)))
- '(package-selected-packages (quote (monokai-alt-theme monokai-theme)))
+ '(package-selected-packages
+   (quote
+    (rainbow-identifiers color-identifiers-mode monokai-alt-theme monokai-theme)))
+ '(show-paren-mode t)
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "IBM Plex Mono" :foundry "IBM " :slant normal :weight semi-bold :height 128 :width normal)))))
+ '(default ((t (:family "Input Mono" :foundry "FBI " :slant normal :weight normal :height 120 :width normal)))))
 
 
 
@@ -54,3 +57,6 @@ There are two things you can do about this warning:
 
 
 (show-paren-mode 1)
+
+
+(setq column-number-mode t)
